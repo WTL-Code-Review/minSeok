@@ -3,7 +3,9 @@ class Solution {
         String[] answer = new String[n];
         
         for(int i = 0; i < n; i++) {
+            // 두 지도의 값을 합치기.
             answer[i] = Integer.toBinaryString(arr1[i] | arr2[i]);
+            // 문제 출력 형식에 따른 0 -> " " , 1 -> "#" 으로 변경
             answer[i] = answer[i].replace("0"," ").replace("1","#");
             
             //answer[i] 첫단어가 " " 경우 ""로 지워지기 때문에 공백 보완 처리 
