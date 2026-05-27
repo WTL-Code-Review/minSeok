@@ -8,7 +8,8 @@ class Solution {
             // 문제 출력 형식에 따른 0 -> " " , 1 -> "#" 으로 변경
             answer[i] = answer[i].replace("0"," ").replace("1","#");
             
-            //answer[i] 첫단어가 " " 경우 ""로 지워지기 때문에 공백 보완 처리 
+            // 9 line - replace 0 -> ' ' 변환 시 첫단어가 ' ' 경우 ''로 처리되어,  
+            // 공백 보완 처리 
             if(answer[i].length() < n) {
                 for(int j = 0; j <= n -answer[i].length(); j++) {
                     answer[i] = " " + answer[i];    
