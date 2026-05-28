@@ -8,7 +8,7 @@ class Solution {
             // 문제 출력 형식에 따른 0 -> " " , 1 -> "#" 으로 변경
             answer[i] = answer[i].replace("0"," ").replace("1","#");
             
-            // 9 line - replace 0 -> ' ' 변환 시 첫단어가 ' ' 경우 ''로 처리되어,  
+            // Integer.toBinaryString()은 앞자리 0일 경우 0이 생략된 채로 return되어,
             // 공백 보완 처리 
             if(answer[i].length() < n) {
                 for(int j = 0; j <= n -answer[i].length(); j++) {
